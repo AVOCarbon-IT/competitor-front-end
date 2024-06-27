@@ -7,6 +7,7 @@ import jsPDF from 'jspdf';
 import * as XLSX from 'xlsx';
 import Swal from 'sweetalert2';
 import {useNavigate} from 'react-router-dom';
+import Navbar from '../Components/Navbar';
  
  
 mapboxgl.accessToken = 'pk.eyJ1IjoibW9vdGV6ZmFyd2EiLCJhIjoiY2x1Z3BoaTFqMW9hdjJpcGdibnN1djB5cyJ9.It7emRJnE-Ee59ysZKBOJw';
@@ -579,8 +580,12 @@ const addAvoPlantPopup = () => {
  
    
     return (
+        
         <div>
-            <nav style={{ background: '#333', padding: '1rem', marginBottom: '1rem', display: 'flex', justifyContent: 'space-between' }}>
+        <div style={{ width: '100%', position: 'fixed', top: 0, left: 0, zIndex: 1000 }}>
+                <Navbar />
+         </div>
+         <nav style={{ background:'#333', padding: '1rem', marginTop: '60px',  display: 'flex', justifyContent: 'space-between' }}>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                     <h2 style={{ color: '#fff', margin: '0', marginRight: '1rem' }}>Filters:</h2>
                     <select

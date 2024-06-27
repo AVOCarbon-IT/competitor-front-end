@@ -13,7 +13,9 @@ const Navbar = () => {
                 <img src={phonehand} width={140} height={30} />
             </LogoLink>
             <Menu style={{ display: smallScreen ? "none" : "flex" }}>
+            <Link to="/">
                 <Item>Home</Item>
+                </Link>
                 <Link to="/form">
                     <Item>Form</Item>
                 </Link>
@@ -48,11 +50,13 @@ const Logo = styled.a`
 const Container = styled.div`
     padding: 0 1rem;
     width: 100%;
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Aligns items to the left and right */
+    background: #333; /* Set background color to black */
 `;
+
 
 const Menu = styled.ul`
     align-items: center;
@@ -103,7 +107,7 @@ const ResMenu = styled.ul`
 const Item = styled.li`
     cursor: pointer;
     list-style: none;
-    color: black;
+    color: white;
     margin: 1rem;
 `;
 
