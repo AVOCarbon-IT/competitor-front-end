@@ -24,4 +24,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/AVOCarbon-IT/competitor-front-end:latest
+          tags: ghcr.io/avocarbon-it/competitor-front-end:latest
